@@ -4,6 +4,7 @@ import { Component, computed, signal } from '@angular/core';
   selector: 'app-pix-transfer',
   imports: [],
   templateUrl: './pix-transfer.component.html',
+  styleUrl: './pix-transfer.component.css',
 })
 export class PixTransferComponent {
   readonly pixKey = signal('');

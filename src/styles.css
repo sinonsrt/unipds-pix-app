@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Cores Principais e de Ação */
+  --color-primary: #0A092F;
+  --color-accent: #54FFDA;
+  --color-action: #54FFDA;
+  --color-error: #FF6B6B;
+
+  /* Superfícies e Fundos */
+  --color-background-light: #F8F9FA;
+  --color-background-dark: #121240;
+  --color-background: var(--color-background-light);
+
+  /* Cores de Tipografia */
+  --color-text-light: #212240;
+  --color-text-dark: #FFFFFF;
+  --color-text: var(--color-text-light);
+
+  /* Famílias Tipográficas */
+  --font-family-heading: 'Montserrat', sans-serif;
+  --font-family-body: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Escala de Espaçamento (múltiplos de 4px) */
+  --spacing-base: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-extra-large: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-background-dark);
+    --color-text: var(--color-text-dark);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+}

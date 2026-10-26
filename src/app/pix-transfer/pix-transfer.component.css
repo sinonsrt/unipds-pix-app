@@ -1,0 +1,182 @@
+:host {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  font-family: var(--font-family-body);
+}
+
+.pix-card {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
+  border-radius: var(--spacing-md);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 var(--spacing-sm) var(--spacing-lg) var(--color-primary);
+}
+
+.pix-card-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pix-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pix-icon {
+  color: var(--color-accent);
+  font-size: var(--spacing-md);
+  font-weight: 700;
+}
+
+.pix-card-header h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--spacing-lg);
+  font-weight: 700;
+  margin: 0 0 var(--spacing-base) 0;
+  color: var(--color-text-dark);
+}
+
+.pix-card-desc {
+  font-size: var(--spacing-sm);
+  color: var(--color-accent);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.pix-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+}
+
+.form-label {
+  font-family: var(--font-family-heading);
+  font-size: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-family-body);
+  font-size: var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 var(--spacing-base) var(--color-primary);
+}
+
+.form-input:invalid:focus {
+  border-color: var(--color-error);
+}
+
+.form-actions {
+  margin-top: var(--spacing-sm);
+}
+
+.btn-confirm {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-family-heading);
+  font-size: var(--spacing-md);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--spacing-sm);
+  border: 2px solid var(--color-action);
+  background-color: var(--color-action);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-confirm:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--color-action);
+  box-shadow: 0 0 var(--spacing-md) var(--color-action);
+}
+
+.btn-confirm:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text-dark);
+}
+
+.confirmed-section {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-accent);
+  color: var(--color-text-dark);
+  text-align: center;
+}
+
+.confirmed-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--spacing-sm);
+  margin-bottom: var(--spacing-base);
+}
+
+.confirmed-section h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--spacing-md);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 var(--spacing-sm) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+  text-align: left;
+  padding: var(--spacing-sm);
+  background-color: var(--color-background-dark);
+  border-radius: var(--spacing-base);
+}
+
+.receipt p {
+  font-size: var(--spacing-sm);
+  margin: 0;
+  color: var(--color-text-dark);
+  font-family: var(--font-family-body);
+}

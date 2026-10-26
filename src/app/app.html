@@ -1,17 +1,26 @@
-<nav>
-  <h1>Pix App</h1>
+<nav class="navbar">
+  <div class="brand">
+    <span class="brand-badge">PIX</span>
+    <h1>Pix App</h1>
+  </div>
+  <div class="user-status">
+    <span class="status-indicator"></span>
+    <span class="status-text">Online</span>
+  </div>
 </nav>
 
-<aside>
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="/pix">pix</a>
-      </li>
-    </ul>
-  </nav>
-</aside>
+<div class="layout-body">
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a routerLink="/pix" routerLinkActive="active-link">pix</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

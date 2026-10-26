@@ -3,8 +3,10 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'pix',
+    loadComponent: () =>
+      import('./pix-transfer/pix-transfer.component').then(
+        (m) => m.PixTransferComponent
+      ),
   },
   {
     path: 'pix',
